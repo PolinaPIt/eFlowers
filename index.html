@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../eFLOWERS/favicon.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../eFLOWERS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/80ab9479c4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>цветочный интернет-магазин "eFLOWERS"</title>
+</head>
+<body>
+  <header id="up">
+    <div class="container">
+      <a class="logo" href="#logo"><img src="img/LOGO.png" alt="Логотип"></a>
+      <nav class="menu">
+          <a href="#shop-items">Каталог</a>
+          <div class="site-search">
+            <input type="search" id="search-input">
+            <button type="button" id="search-btn" class="fa fa-search"></i>
+          </div>
+          <div class="icon-basket">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>  
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="wrapper">
+        <h1>Авторский букет</h1>
+        <p>Сделайте Ваш подарок уникальным. Приятно удивите свою вторую половинку, друзей, коллег <br>или своих близких.</p>
+        <a class="banner-btn" href="#">Заказать</a>
+      </div> 
+    </section>
+    <section class="shop">
+      <div class="wrapper">
+        <h2>Букеты</h2>
+              <div class="filters">
+                <div class="filters-sort">
+                  <label for="sort">Сортировка:</label>
+                  <select name="sort" id="sort">
+                    <option selected value="alphabet">По алфавиту</option>
+                    <option value="expensive">Сначала дорогие</option>
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="rating">Рейтинг</option>
+                  </select>
+                </div>
+              </div>
+              <section id="shop-items">
+              </section>
+            <p id="nothing-found">Ничего не найдено</p>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>Свяжитесь с нами</p>
+    <ul class="contacts">
+        <li><a class="contacts__item" href="tel:+37544196-45-27">+375 (44) 196-45-27</a></li>
+         <div class="networks">
+            <a class="networks__item" href="https://ru-ru.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="networks__item" href="https://ru.pinterest.com/pinterest/"><i class="fa-brands fa-pinterest"></i></a>
+            <a class="networks__item" href="https://twitter.com/telegram?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    <a href="#up" class="up"><i class="fa-solid fa-circle-chevron-up"></i></a>
+  </footer>
+  <template id="item-template">
+    <div class="shop-item">
+      <img src="">
+      <div class="content">
+        <div class="tags"></div>
+        <div class="stars">
+           <div class="rating"></div>
+        </div>
+        <div class="flex">
+          <h3></h3>
+          <p></p>
+        </div>
+        <span class="price"></span>
+        <button type="submit">В корзину</button>
+      </div>
+    </div>
+    </div>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
