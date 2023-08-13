@@ -242,4 +242,5 @@ const items = [
     // Массив упорядочили — осталось его отрисовать
     renderItems(currentState);
   });
+
   
