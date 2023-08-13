@@ -243,4 +243,6 @@ const items = [
     renderItems(currentState);
   });
 
+
+  // Полина, почему у меня совсем другой вид сайта, чем на Github??((((
   
